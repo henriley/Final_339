@@ -152,9 +152,9 @@ th, td{
         border-width: 2px;
         text-align: center;
         font-size: 150%;
-        background-image: -webkit-linear-gradient(top left, black, grey);
-        background-image: -o-linear-gradient(top left, black, grey);
-        background-image: linear-gradient(to bottom right, black, grey);
+        background-image: -webkit-linear-gradient(top left, #575757, grey);
+        background-image: -o-linear-gradient(top left, #575757, grey);
+        background-image: linear-gradient(to bottom right, #575757, grey);
     }
 
     h1{
