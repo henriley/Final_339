@@ -198,6 +198,10 @@ th, td{
         transform: rotateY(180deg);
       }
 
+      .flip-card:focus .flip-card-inner,  .flip-card-2:focus .flip-card-inner{
+        transform: rotateY(180deg);
+      }
+
       .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;

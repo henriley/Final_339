@@ -9,6 +9,7 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-138425345-2');
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +21,6 @@
     <link rel='shortcut icon' href='images/pokeball.png' type='image/png'>
     <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        </script>
 </head>
 
 <body  onload='typeWriter()'>
@@ -44,17 +44,17 @@
         <div class='flip-card'>
             <div class='flip-card-inner'>
                     <div class='flip-card-front'>
-                        <img class='first' src='images/beldum.png' alt="A picture of Beldum" title='A picture of Beldum'>
+                        <img tabindex='0' class='first' src='images/beldum.png' alt="A picture of Beldum" title='A picture of Beldum'>
                     </div>
                     <div class="flip-card-back">
-                        <img class='first' src='images/beldum_code.png' alt='The QR code for Beldum' title='Beldum QR Code'>
+                        <img tabindex='0' class='first' src='images/beldum_code.png' alt='The QR code for Beldum' title='Beldum QR Code'>
                     </div>
                 </div>
             </div>
         <div class='flip-card-2'>
             <div class='flip-card-inner'>
                     <div class='flip-card-front'>
-                            <img class='shiny' src='images/shiny_beldum.png' alt="A picture of Shiny Beldum" title='A picture of Shiny Beldum'>
+                            <img tabindex='0' class='shiny' src='images/shiny_beldum.png' alt="A picture of Shiny Beldum" title='A picture of Shiny Beldum'>
                         </div>
                         <div class="flip-card-back">
                             <img class='shiny-2' src='images/shiny_beldum_code.png' alt="The QR code for Shiny Beldum" title='Shiny Beldum QR Code'>
@@ -243,6 +243,22 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("focus", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
     this.classList.toggle("active");
