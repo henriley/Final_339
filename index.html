@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='css/html5reset.css'>
+    <link rel="stylesheet" href='css/style.css'>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' href='images/pokeball.png' type='image/png'>
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138425345-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138425345-1');
+    </script>
+</head>
+
+<body class='bg-image'>
+        <a href="#content" class='skip'>Skip to Content</a>
+        <header>
+                <h1 id='title' onload='typeWriter()'></h1>
+                <br>
+        <nav> 
+                <ul>
+                    <li><a href="index.html" class= 'current'>Home</a></li>
+                    <li><a href="base.html" class= 'other'>Beldum</a></li>
+                    <li><a href="stage2.html" class= 'other'>Metang</a></li>
+                    <li><a href="stage3.html" class= 'other'>Metagross</a></li>
+                    <li><a href="mega.html" class= 'other'>Mega Metagross</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main id='content'>
+        <div class='container'>
+    <p>Welcome to the Metagross Pokedex Helper! This website will tell you all you need to know about each stage in Metagross' Evolutionary Line so you're ready for battle.</p>
+
+    <br>
+
+    <img class='chain' src='images/evolutionary_chain.png' alt="A picture of the Metagross Evolutionary Chain" title='Metagross Evolutionary Chain'>
+
+</div>
+
+<div class='video'> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <iframe id="video1" width="853" height='480' src="https://www.youtube.com/embed/X1j20R3WTAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+        <footer class='home'><i class="fas fa-gamepad"></i>Pokémon images & names © 1995-2019 Nintendo/Game Freak.<i class="fas fa-gamepad"></i></footer>
+      </div>
+
+      <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function makeBig() { 
+                myVideo.width = 1000;
+                myVideo.height = 563; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320;
+                myVideo.height = 180; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 853;
+                myVideo.height = 480; 
+            }
+
+            var i = 0;
+            var txt = 'Metagross Pokedex Helper';
+            var speed = 50;
+
+            function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("title").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+             }
+            }
+            </script>
+
+</main>
+</body>
+</html>
