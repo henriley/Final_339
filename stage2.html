@@ -11,12 +11,22 @@
     <link rel='shortcut icon' href='images/pokeball.png' type='image/png'>
     <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138425345-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138425345-2');
+    </script>
 </head>
 
-<body>
+<body onload='typeWriter()'>
     <a href="#content" class='skip'>Skip to Content</a>
     <header>
-            <h1>Metang National Pokedex #375</h1>
+            <h1 id='title'></h1>
             <br>
     <nav> 
             <ul>
@@ -624,6 +634,18 @@
               panel.style.display = "block";
             }
           });
+        }
+
+        var i = 0;
+        var txt = 'Metang National Pokedex #375';
+        var speed = 50;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
         }
         </script>
 </main>
