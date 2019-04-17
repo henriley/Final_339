@@ -21,6 +21,7 @@ footer{
 .fa-gamepad {
     color: black;
     font-size: 40px;
+    background-color: white;
 }
 
 h1{
@@ -108,7 +109,6 @@ th, td{
     color: white;
   }
   
-  /* Callout container/body */
   .callout-container {
     padding: 15px;
     background-color: #ccc;
@@ -254,6 +254,7 @@ th, td{
         background-repeat: no-repeat;
         font-family: 'Sanchez', serif;
         background-size: 100% 100%;
+        background-color: #565656;
     }
 
     p{
