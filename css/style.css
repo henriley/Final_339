@@ -163,7 +163,7 @@ table {
     nav ul li{
         display: inline-block;
         width: 15%;
-        background: white;
+        background: #515151;
         padding: 3%;
         min-height: 20px;
         line-height: 20px;
@@ -248,6 +248,7 @@ table {
         height: 50px;
         font-size: 20px;
         color: black;
+        background-color: white;
     }
 
     .bg-image{
@@ -299,7 +300,7 @@ table {
     nav ul li{
         display: inline-block;
         width: 17%;
-        background: white;
+        background: #515151;
         padding: 2%;
         min-height: 20px;
         line-height: 20px;
@@ -443,7 +444,7 @@ table {
     nav ul li{
         display: inline-block;
         width: 17%;
-        background: white;
+        background: #515151;
         padding: 2%;
         min-height: 20px;
         line-height: 20px;
