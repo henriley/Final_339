@@ -41,20 +41,20 @@
         <main id='content'>
 
     <div class='container'>
-        <div class='flip-card'>
+        <div class='flip-card' tabindex='0'>
             <div class='flip-card-inner'>
                     <div class='flip-card-front'>
-                        <img tabindex='0' class='first' src='images/beldum.png' alt="A picture of Beldum" title='A picture of Beldum'>
+                        <img class='first' src='images/beldum.png' alt="A picture of Beldum" title='A picture of Beldum'>
                     </div>
                     <div class="flip-card-back">
-                        <img tabindex='0' class='first' src='images/beldum_code.png' alt='The QR code for Beldum' title='Beldum QR Code'>
+                        <img class='first' src='images/beldum_code.png' alt='The QR code for Beldum' title='Beldum QR Code'>
                     </div>
                 </div>
             </div>
-        <div class='flip-card-2'>
+        <div class='flip-card-2' tabindex='0'>
             <div class='flip-card-inner'>
                     <div class='flip-card-front'>
-                            <img tabindex='0' class='shiny' src='images/shiny_beldum.png' alt="A picture of Shiny Beldum" title='A picture of Shiny Beldum'>
+                            <img class='shiny' src='images/shiny_beldum.png' alt="A picture of Shiny Beldum" title='A picture of Shiny Beldum'>
                         </div>
                         <div class="flip-card-back">
                             <img class='shiny-2' src='images/shiny_beldum_code.png' alt="The QR code for Shiny Beldum" title='Shiny Beldum QR Code'>
@@ -64,7 +64,7 @@
 
                 <div class="callout">
                         <div class="callout-header">Fun Fact!</div>
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';" onkeydown="this.parentElement.style.display='none';" tabindex='0'>&times;</span>
                         <div class="callout-container">
                             <p class='callout_text'>Hovering over the pictures let's you see a QR code that can be used to hack the Pokemon into your game. Try it with your Nintendo 3DS!</p>
                         </div>
