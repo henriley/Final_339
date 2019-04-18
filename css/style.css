@@ -357,6 +357,10 @@ table {
         transform: rotateY(180deg);
       }
 
+      .flip-card:focus .flip-card-inner,  .flip-card-2:focus .flip-card-inner{
+        transform: rotateY(180deg);
+      }
+
       .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;
@@ -406,6 +410,7 @@ table {
         height: 50px;
         font-size: 18px;
         color: black;
+        background-color: white;
     }
 
     .dex{
@@ -506,6 +511,10 @@ table {
         transform: rotateY(180deg);
       }
 
+      .flip-card:focus .flip-card-inner,  .flip-card-2:focus .flip-card-inner{
+        transform: rotateY(180deg);
+      }
+
       .flip-card-front, .flip-card-back {
         position: absolute;
         width: 100%;
@@ -549,6 +558,7 @@ table {
         height: 50px;
         font-size: 9.5px;
         color: black;
+        background-color: white;
     }
 
     .fa-gamepad {
@@ -577,5 +587,44 @@ table {
     
     .active, .accordion:hover {
         background-color: #ccc;
+    }
+
+    .table{
+        width: 50%;
+        margin-bottom: 5%;
+        padding-left: 20%;
+    }
+    
+    button{
+        width: 80%;
+        font-family: 'Sanchez', serif;
+    }
+      
+    td {
+        border: 3px solid black;
+        vertical-align: middle;
+        text-align: center;
+        height: 40px;
+        width: 8%;
+        font-family: 'Sanchez', serif;
+    }
+    
+    th{
+        border: 3px solid black;
+        vertical-align: middle;
+        text-align: center;
+        height: 40px;
+        font-size: 120%;
+        font-family: 'Sanchez', serif;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        font-family: 'Sanchez', serif;
+      }
+
+    #dex{
+        padding-left: 10%;
     }
 }
