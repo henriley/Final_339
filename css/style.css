@@ -10,7 +10,7 @@ body{
 }
 
 footer{
-	min-height: 5vh;
+    min-height: 5vh;
 }
 
 .home{
@@ -21,7 +21,6 @@ footer{
 .fa-gamepad {
     color: black;
     font-size: 40px;
-    background-color: white;
 }
 
 h1{
@@ -36,7 +35,7 @@ h2{
     font-size: 145%;
 }
 .mega_metagross{
-    font-size: 115%;
+    font-size: 145%;
 }
 
 h3{
@@ -62,20 +61,35 @@ a.skip:focus{
     height: auto;
 }
 
-table {
-    border-collapse: collapse;
-    width: 40%;
-  }
-  
-table, th, td {
-border: 3px solid black;
-vertical-align: middle;
+.table{
+    width: 50%;
+    margin-bottom: 5%;
 }
 
-th, td{
-    height: 20px;
-    text-align: center;
+button{
+    width: 80%;
 }
+  
+td {
+    border: 3px solid black;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+    width: 8%;
+}
+
+th{
+    border: 3px solid black;
+    vertical-align: middle;
+    text-align: center;
+    height: 40px;
+    font-size: 120%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+  }
 
 .container{
     display: flex;
@@ -230,23 +244,6 @@ th, td{
         height: 50px;
         font-size: 20px;
         color: black;
-    }
-
-    .dex{
-        padding-right: 11%;
-    }
-
-    .dex2{
-        margin-right: 52%;
-    }
-
-    .loc{
-        margin-left: 2.5%;
-    }
-
-    .loc2{
-        align-self: flex-end;
-        margin-top: 30%;
     }
 
     .bg-image{
@@ -410,17 +407,8 @@ th, td{
         padding-right: 11%;
     }
 
-    .dex2{
-        margin-right: 52%;
-    }
-
     .loc{
         margin-left: 2.5%;
-    }
-
-    .loc2{
-        align-self: flex-end;
-        margin-top: 30%;
     }
 
     .accordion {
@@ -569,22 +557,8 @@ th, td{
     align-self: auto;
     }
 
-    /* .dex{
-        margin-left: 40%;
-    } */
-
-    .dex2{
-        margin-right: 52%;
-        align-self: flex-start;
-    }
-
     .loc{
         margin-left: 13%;
-    }
-
-    .loc2{
-        align-self: flex-end;
-        margin-left: 50%;
     }
 
     .accordion {
